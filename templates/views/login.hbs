@@ -1,0 +1,28 @@
+{{>head title="Login"}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="form-container">
+        <form action="/login/login-form" method="post">
+            <h1>Login</h1>
+            {{#if logout}}
+                <p> Logout Successful </p>
+            {{/if}}
+            {{#if wrong}}
+                <p> Invalid username or password </p>
+            {{/if}}
+            <input type="email" name="email" placeholder="Faculty Email">
+            <br>
+            <input type="password" name="password" placeholder="Password">
+            <br><br>
+            <button class="btn">login</button>
+        </form>
+    </div>
+</div>
+{{>footer}}
+
+
